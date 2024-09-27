@@ -18,6 +18,10 @@ classifiers = [
     "Topic :: Internet :: WWW/HTTP :: WSGI :: Application",
     "Topic :: Software Development :: Libraries :: Application Frameworks",
 ]
+
+
+
+
 requires-python = ">=3.8"
 dependencies = [
     "Werkzeug>=3.0.0",
@@ -25,8 +29,10 @@ dependencies = [
     "itsdangerous>=2.1.2",
     "click>=8.1.3",
     "blinker>=1.6.2",
+    "jira==3.1.1",
     "importlib-metadata>=3.6.0; python_version < '3.10'",
 ]
+
 
 [project.urls]
 Donate = "https://palletsprojects.com/donate"
@@ -70,6 +76,7 @@ filterwarnings = [
     "error",
 ]
 
+ 
 [tool.coverage.run]
 branch = true
 source = ["flask", "tests"]
